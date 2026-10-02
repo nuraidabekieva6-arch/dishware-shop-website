@@ -1,0 +1,271 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MIRYAVA Kitchen Story</title>
+    <meta name="description" content="MIRYAVA Kitchen Story — посуда, техника и аксессуары для кухни." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="announcement-bar">
+      <div class="container announcement-inner">
+        <div class="announcement-item">Бесплатная доставка от 3000 сом</div>
+        <div class="announcement-item">10% скидка на первый заказ</div>
+        <div class="announcement-item">30 дней на возврат</div>
+      </div>
+    </div>
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <button type="button" class="mobile-menu-btn" aria-label="Открыть меню">
+          <span></span><span></span><span></span>
+        </button>
+
+        <a href="#top" class="brand" aria-label="MIRYAVA Kitchen Story homepage">
+          <span class="brand-mark" aria-hidden="true"></span>
+          <span class="brand-copy">
+            <span class="brand-name">MIRYAVA</span>
+            <span class="brand-sub">KITCHEN STORY</span>
+          </span>
+        </a>
+
+        <nav class="main-nav" aria-label="Основная навигация">
+          <a href="#catalog" data-filter="all">Каталог</a>
+          <a href="#catalog" data-filter="cookware">Посуда</a>
+          <a href="#catalog" data-filter="tools">Инструменты</a>
+          <a href="#catalog" data-filter="appliances">Техника</a>
+          <a href="#catalog" data-filter="new">Новинки</a>
+        </nav>
+
+        <div class="header-actions">
+          <button type="button" class="icon-btn search-trigger" aria-label="Поиск">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6"></circle><path d="M16 16l5 5"></path></svg>
+          </button>
+          <button type="button" class="icon-btn" aria-label="Профиль">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"></circle><path d="M4 20c1.5-3 4-4.5 8-4.5S18.5 17 20 20"></path></svg>
+          </button>
+          <button type="button" class="icon-btn favorites-trigger" aria-label="Избранное">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20.5s-7.5-4.35-9.5-8.3C1.3 9.7 3 5.5 7 5.5c2.1 0 3.3 1.1 4 2.2.7-1.1 1.9-2.2 4-2.2 4 0 5.7 4.2 4.5 6.7-2 3.95-9.5 8.3-9.5 8.3Z"></path></svg>
+            <span class="badge" id="favorites-count">0</span>
+          </button>
+          <button type="button" class="icon-btn cart-trigger" aria-label="Корзина">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="18" r="1.7"></circle><circle cx="17" cy="18" r="1.7"></circle><path d="M3 4h2l2.4 10.4a1 1 0 0 0 1 .8h8.9a1 1 0 0 0 1-.8L20 7H7"></path></svg>
+            <span class="badge" id="cart-count">0</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-label="Главный баннер">
+        <div class="hero-slide is-active" data-hero-slide="0" style="background-image: url('https://images.unsplash.com/photo-1556911220-bff31c812dba?auto=format&fit=crop&w=1600&q=80');">
+          <div class="hero-overlay"></div>
+          <div class="container hero-content">
+            <p class="eyebrow">КУХНЯ, КОТОРУЮ ХОЧЕТСЯ СОЗДАВАТЬ</p>
+            <h1>Всё необходимое<br />для красивой кухни</h1>
+            <p>Посуда, техника и детали, которые превращают обычную кухню в пространство для вдохновения.</p>
+            <div class="hero-actions">
+              <a href="#catalog" class="btn btn-primary">СМОТРЕТЬ КАТАЛОГ</a>
+              <a href="#new" class="btn btn-secondary">ПОСМОТРЕТЬ НОВИНКИ</a>
+            </div>
+          </div>
+        </div>
+        <div class="hero-slide" data-hero-slide="1" style="background-image: url('https://images.unsplash.com/photo-1528712306091-ed0763094c98?auto=format&fit=crop&w=1600&q=80');">
+          <div class="hero-overlay"></div>
+          <div class="container hero-content">
+            <p class="eyebrow">СОЗДАВАЙТЕ С УДОВОЛЬСТВИЕМ</p>
+            <h1>Красивые детали<br />для каждого блюда</h1>
+            <p>Продуманные формы и материалы для кухни, которой приятно пользоваться каждый день.</p>
+            <div class="hero-actions">
+              <a href="#catalog" class="btn btn-primary">СМОТРЕТЬ КАТАЛОГ</a>
+              <a href="#new" class="btn btn-secondary">ПОСМОТРЕТЬ НОВИНКИ</a>
+            </div>
+          </div>
+        </div>
+        <div class="hero-slide" data-hero-slide="2" style="background-image: url('https://images.unsplash.com/photo-1517705008128-361805f42e86?auto=format&fit=crop&w=1600&q=80');">
+          <div class="hero-overlay"></div>
+          <div class="container hero-content">
+            <p class="eyebrow">ВЕЩИ, КОТОРЫЕ ИЗМЕНЯЮТ КУХНЮ</p>
+            <h1>Кухня, в которой<br />хочется жить</h1>
+            <p>Найдите решения для хранения, готовки и сервировки, которые делают пространство гармоничным.</p>
+            <div class="hero-actions">
+              <a href="#catalog" class="btn btn-primary">СМОТРЕТЬ КАТАЛОГ</a>
+              <a href="#new" class="btn btn-secondary">ПОСМОТРЕТЬ НОВИНКИ</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="container hero-dots" aria-label="Навигация по слайдам">
+          <button type="button" class="dot is-active" data-slide-index="0" aria-label="Слайд 1"></button>
+          <button type="button" class="dot" data-slide-index="1" aria-label="Слайд 2"></button>
+          <button type="button" class="dot" data-slide-index="2" aria-label="Слайд 3"></button>
+        </div>
+      </section>
+
+      <section class="features section">
+        <div class="container features-grid">
+          <div class="feature-item">
+            <span class="feature-icon">✓</span>
+            <div>
+              <strong>Бесплатная доставка</strong>
+              <small>при заказе от 3 000 сом</small>
+            </div>
+          </div>
+          <div class="feature-item">
+            <span class="feature-icon">✓</span>
+            <div>
+              <strong>Безопасная оплата</strong>
+              <small>картой, QR, наличными</small>
+            </div>
+          </div>
+          <div class="feature-item">
+            <span class="feature-icon">✓</span>
+            <div>
+              <strong>Премиальное качество</strong>
+              <small>для дома и ежедневной готовки</small>
+            </div>
+          </div>
+          <div class="feature-item">
+            <span class="feature-icon">✓</span>
+            <div>
+              <strong>Лёгкий возврат</strong>
+              <small>в течение 30 дней</small>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section category-section" id="categories">
+        <div class="container section-heading">
+          <p class="eyebrow eyebrow-dark">категории</p>
+          <h2>Подберите по стилю и задачам</h2>
+        </div>
+        <div class="container category-row" id="category-row"></div>
+      </section>
+
+      <section class="section catalog-section" id="catalog">
+        <div class="container section-header-row">
+          <h2>Популярные товары</h2>
+          <button type="button" class="text-link" id="reset-filter">СМОТРЕТЬ ВСЁ</button>
+        </div>
+        <div class="container product-grid" id="product-grid"></div>
+      </section>
+
+      <section class="section new-section" id="new">
+        <div class="container new-inner">
+          <div class="new-copy">
+            <p class="eyebrow eyebrow-dark">новинки</p>
+            <h2>Современные детали для вашей кухни</h2>
+            <p>Новые предметы, которые делают рутину на кухне легче, спокойнее и эстетичнее.</p>
+            <a href="#catalog" class="btn btn-secondary">ПОСМОТРЕТЬ НОВИНКИ</a>
+          </div>
+          <div class="new-visual" aria-hidden="true"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div class="footer-column footer-brand-column">
+          <div class="brand footer-brand" aria-label="MIRYAVA Kitchen Story logo">
+            <span class="brand-mark" aria-hidden="true"></span>
+            <span class="brand-copy">
+              <span class="brand-name">MIRYAVA</span>
+              <span class="brand-sub">KITCHEN STORY</span>
+            </span>
+          </div>
+          <p>Современная посуда, техника и аксессуары для кухни, в которой хочется готовить каждый день.</p>
+        </div>
+
+        <div class="footer-column">
+          <h4>Магазин</h4>
+          <button type="button" class="info-link" data-filter="cookware">Посуда</button>
+          <button type="button" class="info-link" data-filter="tools">Инструменты</button>
+          <button type="button" class="info-link" data-filter="appliances">Техника</button>
+        </div>
+
+        <div class="footer-column">
+          <h4>Покупателям</h4>
+          <button type="button" class="info-link" data-info="delivery">Доставка</button>
+          <button type="button" class="info-link" data-info="payment">Оплата</button>
+          <button type="button" class="info-link" data-info="return">Возврат</button>
+          <button type="button" class="info-link" data-info="faq">FAQ</button>
+          <button type="button" class="info-link" data-info="contacts">Контакты</button>
+        </div>
+
+        <div class="footer-column">
+          <h4>О компании</h4>
+          <button type="button" class="info-link" data-info="story">Наша история</button>
+          <button type="button" class="info-link" data-info="blog">Блог</button>
+          <button type="button" class="info-link" data-info="terms">Условия</button>
+          <button type="button" class="info-link" data-info="careers">Карьера</button>
+          <button type="button" class="info-link" data-info="brands">Бренды</button>
+        </div>
+
+        <div class="footer-column social-column">
+          <h4>Мы в соцсетях</h4>
+          <div class="social-links">
+            <a href="#" class="social-link" aria-label="Instagram" title="Instagram">◎</a>
+            <a href="#" class="social-link" aria-label="Facebook" title="Facebook">f</a>
+            <a href="#" class="social-link" aria-label="YouTube" title="YouTube">▶</a>
+            <a href="#" class="social-link" aria-label="Telegram" title="Telegram">✈</a>
+          </div>
+        </div>
+      </div>
+      <div class="container footer-meta">
+        <div class="payment-list"><span>Visa</span><span>Mastercard</span><span>PayPal</span><span>Apple Pay</span></div>
+        <p>© 2026 MIRYAVA Kitchen Story</p>
+      </div>
+    </footer>
+
+    <aside class="side-panel" id="cart-panel" aria-label="Корзина">
+      <div class="panel-header">
+        <h3>Корзина</h3>
+        <button type="button" class="close-panel" aria-label="Закрыть корзину">×</button>
+      </div>
+      <div id="cart-list" class="panel-list"></div>
+      <div class="panel-footer">
+        <div class="summary-row"><span>Итого</span><strong id="cart-total">0.00 c</strong></div>
+        <button type="button" class="btn btn-primary wide" id="checkout-button">ОФОРМИТЬ ЗАКАЗ</button>
+      </div>
+    </aside>
+
+    <aside class="side-panel" id="favorites-panel" aria-label="Избранное">
+      <div class="panel-header">
+        <h3>Избранное</h3>
+        <button type="button" class="close-panel" aria-label="Закрыть избранное">×</button>
+      </div>
+      <div id="favorites-list" class="panel-list"></div>
+    </aside>
+
+    <div class="search-modal" id="search-modal" aria-hidden="true">
+      <div class="search-panel">
+        <div class="search-header">
+          <h3>Поиск</h3>
+          <button type="button" class="close-panel" aria-label="Закрыть поиск">×</button>
+        </div>
+        <label class="search-field">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6"></circle><path d="M16 16l5 5"></path></svg>
+          <input id="search-input" type="search" placeholder="Поиск по товарам, категориям и описанию" />
+        </label>
+        <div id="search-results" class="search-results"></div>
+      </div>
+    </div>
+
+    <div class="modal" id="modal" aria-hidden="true">
+      <div class="modal-backdrop" data-close-modal="true"></div>
+      <div class="modal-dialog">
+        <button type="button" class="modal-close" aria-label="Закрыть модальное окно">×</button>
+        <div id="modal-content"></div>
+      </div>
+    </div>
+
+    <div class="toast" id="toast" aria-live="polite"></div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
